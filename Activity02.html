@@ -4,44 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        input[type="radio"] {
-            height: 100px;
-            width: 100px;
-            padding: 5px;
-            border-width: 5px;
-        }
-
-        label[for="male"],
-        label[for="female"] {
-            font-size: 100px;
-            padding: 100px;
-        }
-        input[type="checkbox"]{
-            height: 100px;
-            width: 100px;
-            padding: 5px;
-            border-width: 5px;
-        }
-        label[for="terms"]{
-
-            font-size: 100px;
-            padding: 100px;
-        }
-
-        table {
-      width: 100%;  /* Adjust as needed to fit the layout */
-      font-size: 100px;  /* Match font size with other elements */
-    }
-
-    table, th, td, tr {
-      width: 33.33%;  /* Equal column widths for visual consistency */
-      padding: 10px;  /* Adjust as needed for spacing */
-      border: 10px solid black;
-      border-collapse: collapse;
-    }
-
-    </style>
 </head>
 <body>
     <header>
@@ -51,6 +13,7 @@
             <li><a style ="font-size: 100px;" href= "#">Home</a></li>
             <li><a style = "font-size: 100px;" href= "#"> About Us</a></li>
             <li><a style = "font-size: 100px;" href= "#"> Contact </a></li>
+            <hr>
             </ul>
         </Section>
     </header>
@@ -58,36 +21,40 @@
         <nav>
             <li>
                 <p style = "font-size: 100px;"> IMAGE </p>
+                
             </li>
             <img src="c:\Users\m307user\Downloads\2024-01-18T09_12_47.946Z.jpg" alt="Picture ko po sir locally imported">
+            <figcaption><p style = "font-size:100px;">@im.shawelicious</p></figcaption>
+            <hr>
             <ul>
                 <p style = "font-size: 100px; ">FORMS</p>
+                
         </nav>
     </header>
     <header>
         <section>
             <form >
                 <label for="name" style ="font-size: 100px;">Name:</label>
-                <input type="text" id="name" name="name" style="font-size: 100px;"><br><br>
+                <input type="text" id="name" name="name" style="font-size: 100px;" required><br><br>
     
                 <label for="password" style ="font-size: 100px;">Password:</label>
-                <input type="password" id="password" name="password" style="font-size: 100px;"><br><br>
+                <input  style= "font-size: 100px;"type="password" id="password" name="password" pattern = "[a-z]" minlength= "15" title="Incorrect Fill-up"   required><br><br>
     
                 <label for="gender" style ="font-size: 100px;">Gender:</label><br>
-                <input type ="radio" id = "male" name="gender" value="male" style="font-size: 100px;">
+                <input type ="radio" id = "male" name="gender" value="male" style="font-size: 100px; height:100px; width:100px; padding: 5px; border-width:5px;" required>
                 <label for="male" style="font-size: 100px;">MALE</label><br>
-                <input type = "radio" id="female" name="gender" value="female" style="font-size:100px;">
+                <input type = "radio" id="female" name="gender" value="female" style="font-size:100px; height:100px; width:100px; padding: 5px; border-width:5px;" required>
                 <label for="female" style ="font-size: 100px;">FEMALE</label><br><br>
     
                 <label for ="terms" style ="font-size: 100px;">Accept Terms and Condition: </label>
-                <input type="checkbox" id ="terms" name="terms" style = "font-size: 100px;"><br><br>
+                <input type="checkbox" id ="terms" name="terms" style = "font-size: 100px; height:100px; width:100px; padding: 5px; border-width:5px;" required><br><br>
     
                 <input type="submit" value = "Submit" style ="font-size: 100px;">
             </form>
         </section>
     </header>
- 
-        <table style="width: 100%;">
+        <hr>
+        <table border = "1" style="width: 100%; font-size:100px; padding: 10px; border: 10px solid black; border-collapse:collapse;">
             <thread>
                 <tr>
                     <th>Name</th>
@@ -108,6 +75,14 @@
                 </tr>
             </tbody>
         </table>
+            <hr>
+    <p style = "font-size: 100px;"> AUDIO AND VIDEO</p>
+    <audio controls >
+        <source src="https://archive.org/download/NeverGonnaGiveYouUp/jocofullinterview41.mp3" type="audio/mpeg">
+    </audio>
+    <video  width="1000" height="1000" controls    
+             src="https://archive.org/embed/PreviewsFromDumbo1986/VHS%20Previews%20from%20%27Dumbo%27%20%28Roadshow_%E2%81%84Walt%20Disney%20Home%20Video%2C%201986%29.mp4">
+</video>
     </ul>
 </nav>
 </body>
