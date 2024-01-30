@@ -8,82 +8,77 @@
 <body>
     <header>
         <Section>
-            <ul>
-            <p style = "font-size: 100px;"> LINKS</p>
-            <li><a style ="font-size: 100px;" href= "#">Home</a></li>
-            <li><a style = "font-size: 100px;" href= "#"> About Us</a></li>
-            <li><a style = "font-size: 100px;" href= "#"> Contact </a></li>
-            <hr>
-            </ul>
+            <h2> LINKS</h2>
+            <nav>
+                <a href= "#">Home </a>
+                <a href= "#"> About Us</a>
+                <a href= "#"> Contact </a>
+                <br>
+            </nav>
         </Section>
     </header>
-    <header>
-        <nav>
-            <li>
-                <p style = "font-size: 100px;"> IMAGE </p>
-                
-            </li>
-            <img src="c:\Users\m307user\Downloads\2024-01-18T09_12_47.946Z.jpg" alt="Picture ko po sir locally imported">
-            <figcaption><p style = "font-size:100px;">@im.shawelicious</p></figcaption>
-            <hr>
-            <ul>
-                <p style = "font-size: 100px; ">FORMS</p>
-                
-        </nav>
-    </header>
+        <section>
+            <h2> IMAGE </h2>
+            <figure>
+
+                <img src="https://i.seadn.io/gae/2hDpuTi-0AMKvoZJGd-yKWvK4tKdQr_kLIpB_qSeMau2TNGCNidAosMEvrEXFO9G6tmlFlPQplpwiqirgrIPWnCKMvElaYgI-HiVvXc?auto=format&dpr=1&w=1000" alt="Picture ko po noong wala pa akong glow up" width="400" height="500">
+                <figcaption><p>@im.shawelicious</p></figcaption>
+            </figure>
+        </section>
+
+                   
     <header>
         <section>
+            <h2>FORMS</h2>    
             <form >
-                <label for="name" style ="font-size: 100px;">Name:</label>
-                <input type="text" id="name" name="name" style="font-size: 100px;" required><br><br>
+                <label for="name">Name:</label>
+                <input type="text" id="name" required><br>
     
-                <label for="password" style ="font-size: 100px;">Password:</label>
-                <input  style= "font-size: 100px;"type="password" id="password" name="password" pattern = "[a-z]" minlength= "15" title="Incorrect Fill-up"   required><br><br>
+                <label for="password">Password:</label>
+                <input  type="password" id="password" name="password"  minlength= "8" title="Incorrect Fill-up"  required><br>
     
-                <label for="gender" style ="font-size: 100px;">Gender:</label><br>
-                <input type ="radio" id = "male" name="gender" value="male" style="font-size: 100px; height:100px; width:100px; padding: 5px; border-width:5px;" required>
-                <label for="male" style="font-size: 100px;">MALE</label><br>
-                <input type = "radio" id="female" name="gender" value="female" style="font-size:100px; height:100px; width:100px; padding: 5px; border-width:5px;" required>
-                <label for="female" style ="font-size: 100px;">FEMALE</label><br><br>
+                <label class="gender">Gender:</label><br>
+                <input type ="radio" id = "male" name="gender" value="male" required>
+                <label for="male" >MALE</label><br>
+                <input type = "radio" id="female" name="gender" required>
+                <label for="female" >FEMALE</label><br><br>
     
-                <label for ="terms" style ="font-size: 100px;">Accept Terms and Condition: </label>
-                <input type="checkbox" id ="terms" name="terms" style = "font-size: 100px; height:100px; width:100px; padding: 5px; border-width:5px;" required><br><br>
+                <label for ="terms">Accept Terms and Condition: </label>
+                <input type="checkbox" id ="terms" name="terms" required><br><br>
     
-                <input type="submit" value = "Submit" style ="font-size: 100px;">
+                <input type="submit" value = "Submit">
             </form>
-        </section>
-    </header>
-        <hr>
-        <table border = "1" style="width: 100%; font-size:100px; padding: 10px; border: 10px solid black; border-collapse:collapse;">
-            <thread>
+                <hr>
+        <table>
                 <tr>
                     <th>Name</th>
                     <th>Age</th>
                     <th>City</th>
+                    <tbody>
+                        <tr>
+                            <td>John</td>
+                            <td>25</td>
+                            <td>New York</td>
+                        </tr>
+                        <tr>
+                            <td>Jane</td>
+                            <td>30</td>
+                            <td>Los Angeles</td>
                 </tr>
-            </thread>
-            <tbody>
-                <tr>
-                    <td>John</td>
-                    <td>25</td>
-                    <td>New York</td>
-                </tr>
-                <tr>
-                    <td>Jane</td>
-                    <td>30</td>
-                    <td>Los Angeles</td>
-                </tr>
-            </tbody>
-        </table>
-            <hr>
-    <p style = "font-size: 100px;"> AUDIO AND VIDEO</p>
-    <audio controls >
-        <source src="https://archive.org/download/NeverGonnaGiveYouUp/jocofullinterview41.mp3" type="audio/mpeg">
-    </audio>
-    <video  width="1000" height="1000" controls    
-             src="https://archive.org/embed/PreviewsFromDumbo1986/VHS%20Previews%20from%20%27Dumbo%27%20%28Roadshow_%E2%81%84Walt%20Disney%20Home%20Video%2C%201986%29.mp4">
-</video>
-    </ul>
-</nav>
+            </table>  
+        </section>
+    </header>
+
+            <p>AUDIO AND VIDEO</p>
+            <audio controls>
+                <source src="https://archive.org/download/NeverGonnaGiveYouUp/jocofullinterview41.mp3" type="audio/mpeg">
+        </audio>
+            
+            <video width = "1000" height = "1000" controls
+            src="https://archive.org/embed/PreviewsFromDumbo1986/VHS%20Previews%20from%20%27Dumbo%27%20%28Roadshow_%E2%81%84Walt%20Disney%20Home%20Video%2C%201986%29.mp4">
+        </video>
+    <footer>Author: Sherwin Guevarra Pimentel
+    </footer>
 </body>
-</html><nav>
+</html>
+
