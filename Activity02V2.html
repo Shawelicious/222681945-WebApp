@@ -16,9 +16,14 @@
         body{
             background-color: whitesmoke;
         }
-        title{text-align: center;}
+        title{text-align: center;}x`
         header{text-align: center;}
         section{text-align: center;}
+        footer#Embedded {
+            text-align: center;
+            margin: 0 auto;
+            max-width: 600px;
+        }
         table{}
    </style>
 </head>
@@ -36,7 +41,9 @@
                 <a href="#FORMS">FORMS</a><br>
                 <a href="#AUDIOANDVIDEO">AUDIO AND VIDEO</a><br>
                 <a href="#ACCESSIBILITY">ACCESSIBILITY</a><br>
-                <a href="#EVENT LISTENER">EVENT LISTENER</a>
+                <a href="#EVENT LISTENER">EVENT LISTENER</a><br>
+                <a href="#IFrame">Iframe</a><br>
+                <a href="#Embedded">Embedded Widget</a><br>
                 <br>
             </nav>
         </Section>
@@ -55,11 +62,20 @@
         <section id = "FORMS">
             <h2>FORMS</h2>    
             <form >
-                <label for="name">Name:</label>
+                <label for="name">Name: </label>
                 <input type="text" id="name" required><br>
+                
+                <label for="em">Email: </label>
+                <input type="email" name="em" id="em" required><br>
+
+                <label for="phonenumb">Phone Number: </label>
+                <input type="tel" name="phonenumb" id="phonenumb" placeholder="example +63 912354789" required><br>
+                
     
                 <label for="password">Password:</label>
                 <input  type="password" id="password" name="password"  minlength= "8" title="Incorrect Fill-up"  required><br>
+
+                
     
                 <label class="gender">Gender:</label><br>
                 <input type ="radio" id = "male" name="gender" value="male" required>
@@ -104,7 +120,7 @@
     </video>
     </section>
     <header>
-        <footer id = "ABOUT ME">
+        <footer id = "ABOUT ME" style = "text-align: center;">
             <h2>ABOUT ME</h2>
             <form>
                 <img src="C:\Users\m307user\Downloads\2024-01-18T09_12_47.946Z.jpg" alt="picture" width = "1000" height = "1000">
@@ -117,7 +133,7 @@
         </footer>
     </header>
     <header>
-        <footer id = "ACCESSIBILITY">
+        <footer id = "ACCESSIBILITY" style ="text-align: center;">
             <h2>ACCESSIBILITY</h2>
             <img src="https://cdn.britannica.com/78/43678-050-F4DC8D93/Starry-Night-canvas-Vincent-van-Gogh-New-1889.jpg" alt="Vincent van Gogh Art" width = "500" height = "500">
             <p>The <abbr title="Starry Night">STN</abbr> was painted June 1889–June 1889.</p>
@@ -132,10 +148,23 @@
     <p id="demo"></p>
     <script src="EVENTLISTENER.js"></script>
 
+    <footer id = IFrame>
+        <p>IFRAME</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.315263143782!2d-122.40652118537203!3d37.78557637218252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580e14cc56bf3%3A0x7fda2317860a0d8a!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1644296482483!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="0" loading="lazy"></iframe>
+    </footer>
+
+    <footer id = Embedded style = "text-align: center;">
+        <p>EMBEDDED WIDGET</p>
+        <blockquote class="twitter-tweet"><p lang="en" dir="ltr">World&#39;s Largest Rick Roll <a href="https://twitter.com/MSGSphere?ref_src=twsrc%5Etfw">@MSGSphere</a> <br>OCT. 29th<a href="https://twitter.com/hashtag/LasVegas?src=hash&amp;ref_src=twsrc%5Etfw">#LasVegas</a> <a href="https://t.co/hbpHIIE0xk">pic.twitter.com/hbpHIIE0xk</a></p>&mdash; 213.special (@213special) <a href="https://twitter.com/213special/status/1752178765864804691?ref_src=twsrc%5Etfw">January 30, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </footer>
+ 
+
 </section>
        
 </footer>
     </header>
+
+
 </body>
 </html>
 
